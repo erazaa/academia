@@ -1,0 +1,21 @@
+<div class="login-ctn">
+        <h2>Inicia sesión y disfruta de los mejores éxitos actuales</h2>
+        <div class="example-form">
+            <div class="img">
+                <img
+                    src="assets/mic.svg"
+                    
+                />
+            </div>
+            <form [formGroup]="loginForm" (submit)="onSubmit()">
+                <mat-form-field class="example">
+                  <input matInput placeholder="Correo Electrónico" value="" formControlName="email">
+                </mat-form-field>
+                <mat-form-field class="example" id="pass">
+                  <input matInput placeholder="Contraseña" value="" type="password" formControlName="password">
+                </mat-form-field>
+                <button mat-flat-button type="submit">INGRESAR</button>
+            </form>
+            <label class="account" (click)="goToRegister()">Crear una cuenta nueva</label>
+        </div>
+</div>
